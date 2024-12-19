@@ -5,7 +5,7 @@ using UnityEngine;
 public class MovimientoJugador : MonoBehaviour
 {
     [SerializeField]
-    private float speed = 7f;
+    private float speed = 40f;
    // [SerializeField]
    // private float minX = 132f;  // Límite mínimo en el eje X (por ejemplo, la pared izquierda)
   //  [SerializeField]

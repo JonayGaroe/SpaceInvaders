@@ -20,12 +20,12 @@ public class EnemigosScript : MonoBehaviour
     void Start()
     {
 
-        GenerarMapa();
+        GenerarEnemigos();
 
     }
 
     // Método para generar el mapa aleatorio
-    public void GenerarMapa()
+    public void GenerarEnemigos()
     {
         for (int filaEnemigos = 0; filaEnemigos < filasEnemigo; filaEnemigos++)
         {
