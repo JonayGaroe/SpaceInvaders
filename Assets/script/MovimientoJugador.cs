@@ -6,16 +6,12 @@ public class MovimientoJugador : MonoBehaviour
 {
     [SerializeField]
     private float speed = 40f;
-   // [SerializeField]
-   // private float minX = 132f;  // Límite mínimo en el eje X (por ejemplo, la pared izquierda)
-  //  [SerializeField]
-    //private float maxX = 980f;   // Límite máximo en el eje X (por ejemplo, la pared derecha)
+    [SerializeField]
+    private float minX = -1774.3f;  // Límite mínimo en el eje X (por ejemplo, la pared izquierda)
+    [SerializeField]
+    private float maxX = -1392.286f;   // Límite máximo en el eje X (por ejemplo, la pared derecha)
 
 
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
         
@@ -26,7 +22,6 @@ public class MovimientoJugador : MonoBehaviour
 
     }
 
-    // Update is called once per frame
     void Update()
     {
 
@@ -37,7 +32,7 @@ public class MovimientoJugador : MonoBehaviour
         float newPosX = transform.position.x + movement * speed * Time.deltaTime;
 
         // Limitar la posición en el eje X para que no traspase las paredes
-        //newPosX = Mathf.Clamp(newPosX, minX, maxX);
+        newPosX = Mathf.Clamp(newPosX, minX, maxX);
 
 
         // Asignar la nueva posición manteniendo la posición Y igual
