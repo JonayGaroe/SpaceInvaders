@@ -474,10 +474,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d59aa27b717de934d91727b4860a1d5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  prefabBala: {fileID: 3095819214767597542, guid: b682369d6a9498d44a91572fac038ce8, type: 3}
-  puntoDisparo: {fileID: 1369646804}
-  velocidadBala: 100
-  tiempoDeVida: 150
+  prefabBala: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
+  puntoDisparo: {fileID: 199241728}
+  velocidadBala: 90
+  tiempoDeVida: 2
 --- !u!1 &199241722 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7341745696642050353, guid: 0bcced559cd579c47a49b96a95a29373, type: 3}
@@ -504,6 +504,11 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &199241728 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7973850174599099275, guid: 0bcced559cd579c47a49b96a95a29373, type: 3}
+  m_PrefabInstance: {fileID: 462372221147282565}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &204011543
 GameObject:
   m_ObjectHideFlags: 0
@@ -1004,8 +1009,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabs:
   - {fileID: 8823395003204904086, guid: 77934717febee6c4b9ab464b70cdf056, type: 3}
+  - {fileID: 2003368991419164390, guid: 5c13d62aae550d34e96f34f46f19f490, type: 3}
   - {fileID: 541111344660288230, guid: 28e81e5bfd2dac94399ed07649737bd8, type: 3}
-  - {fileID: 1470321591751303696, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
   - {fileID: 1470321591751303696, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
   anchoMapaMin: -1658
   anchoMapaMax: -1199

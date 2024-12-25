@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class DisparoBala : MonoBehaviour
@@ -16,7 +17,7 @@ public class DisparoBala : MonoBehaviour
 
 
 
-        
+
 
 
 
@@ -48,14 +49,14 @@ public class DisparoBala : MonoBehaviour
         GameObject bala = Instantiate(prefabBala, puntoDisparo.position, Quaternion.identity);
 
         // Aplicar movimiento hacia arriba
-    
-            Rigidbody rb3D = bala.GetComponent<Rigidbody>(); // Si es 3D
-            if (rb3D != null)
-            {
-                rb3D.velocity = Vector3.up * velocidadBala;
-            }
 
-        
+        Rigidbody rb3D = bala.GetComponent<Rigidbody>(); // Si es 3D
+        if (rb3D != null)
+        {
+            rb3D.velocity = Vector3.up * velocidadBala;
+        }
+
+
 
 
 

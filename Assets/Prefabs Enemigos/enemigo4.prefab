@@ -68,8 +68,90 @@ PrefabInstance:
       propertyPath: m_Name
       value: enemigo4
       objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+      propertyPath: m_Layer
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+      propertyPath: m_TagString
+      value: Enemigos
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6776876375181274639}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7830617797187555143}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -8251642354767898016}
   m_SourcePrefab: {fileID: 100100000, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+--- !u!1 &541111344660288230 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+  m_PrefabInstance: {fileID: 811492595395211191}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6776876375181274639
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541111344660288230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97a67714028b8b04fbaf2b60fd0d5999, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBala: {fileID: 1266031854357502585, guid: 1adaf97858dd97c44aadff68a339cb3f, type: 3}
+  puntoDisparo: {fileID: 921471327072241756}
+  velocidadBala: 60
+  intervaloDisparo: 5
+  distanciaDeteccion: 800
+  capaEnemigos:
+    serializedVersion: 2
+    m_Bits: 8
+--- !u!65 &7830617797187555143
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541111344660288230}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 0.013902016, y: 0.01853602, z: 0.009930012}
+  m_Center: {x: 0.0000000547152, y: -0.00032690028, z: 0.000024025328}
+--- !u!114 &-8251642354767898016
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 541111344660288230}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10cca1d3a9296074facf3c03cebe2b54, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  velocidad: 20
+  escalon: 15
+--- !u!4 &921471327072241756 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -8679921383154817045, guid: 87233de721ccb39459e8188a19161ba8, type: 3}
+  m_PrefabInstance: {fileID: 811492595395211191}
+  m_PrefabAsset: {fileID: 0}

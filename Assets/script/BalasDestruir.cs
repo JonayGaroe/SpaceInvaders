@@ -20,5 +20,5 @@ public class BalasDestruir : MonoBehaviour
     {
         Destroy(gameObject);
     }
-
+    
 }

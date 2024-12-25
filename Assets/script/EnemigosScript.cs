@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 
 public class EnemigosScript : MonoBehaviour
@@ -29,7 +30,7 @@ public class EnemigosScript : MonoBehaviour
     {
         for (int filaEnemigos = 0; filaEnemigos < filasEnemigo; filaEnemigos++)
         {
-            for (int columnaEnemigos = 0; columnaEnemigos< columnasEnemigo; columnaEnemigos++)
+            for (int columnaEnemigos = 0; columnaEnemigos < columnasEnemigo; columnaEnemigos++)
             {
                 float posicionX = anchoMapaMin + columnaEnemigos * distanciaEntreObjetosX;
                 float posicionY = altoMapaMin + filaEnemigos * distanciaEntreObjetosY;
