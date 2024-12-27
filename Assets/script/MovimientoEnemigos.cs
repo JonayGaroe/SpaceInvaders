@@ -8,11 +8,19 @@ public class MovimientoEnemigos : MonoBehaviour
     public float escalon = 1f; // Distancia a bajar
     private int direccion = 1; // 1: derecha, -1: izquierda
     private float anchoEnemigo;
+    private bool volteando = false; // Controla si está en proceso de animación
+    //ControladorEnemigos.instance.DecrementarEnemigosRestantes();
+
+
 
     void Start()
     {
         anchoEnemigo = GetComponent<MeshRenderer>().bounds.size.x / 2;
+
+        // Iniciar la animación de volteo repetidamente
+        InvokeRepeating(nameof(AnimarVolteo), 1f, 2f); // Cada 2 segundos
     }
+
 
     void Update()
     {
@@ -23,20 +31,38 @@ public class MovimientoEnemigos : MonoBehaviour
         Vector3 posEnPantalla = Camera.main.WorldToViewportPoint(transform.position);
         if (posEnPantalla.x < 0 || posEnPantalla.x > 1)
         {
-            CambiarDireccion();
+            // Notificar al controlador
+            ControladorEnemigos.instance.CambiarDireccionGlobal();
         }
 
     }
 
-    void CambiarDireccion()
+    public void CambiarDireccion(int nuevaDireccion)
     {
-        // Cambiar dirección
-        direccion *= -1;
+        direccion = nuevaDireccion;
+    }
 
-        // Bajar un escalón
+    public void BajarEscalon()
+    {
         transform.position = new Vector3(transform.position.x, transform.position.y - escalon, transform.position.z);
     }
 
+    void AnimarVolteo()
+    {
+        if (!volteando)
+        {
+            volteando = true;
 
-
+            // Rotar 180 grados en el eje Y
+            LeanTween.rotateY(gameObject, 180f, 0.2f).setOnComplete(() =>
+            {
+      
+                // Rotar de vuelta a 0 grados en el eje Y
+                LeanTween.rotateY(gameObject, 0f, 0.2f).setOnComplete(() =>
+                {
+                    volteando = false;
+                });
+            });
+        }
+    }
 }

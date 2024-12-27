@@ -36,7 +36,7 @@ public class EnemigosScript : MonoBehaviour
                 float posicionY = altoMapaMin + filaEnemigos * distanciaEntreObjetosY;
 
                 // Generar una posición aleatoria para el prefab
-                Vector3 posicion = new Vector3(posicionX, posicionY, -371.8f);
+                Vector3 posicion = new Vector3(posicionX, posicionY, -380.8f);
 
                 // Elegir un prefab aleatorio del array de prefabs
                 GameObject prefabAleatorio = prefabs[Random.Range(0, prefabs.Length)];
