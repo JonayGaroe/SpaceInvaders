@@ -16,14 +16,17 @@ public class MovimientoEnemigos : MonoBehaviour
     void Start()
     {
         anchoEnemigo = GetComponent<MeshRenderer>().bounds.size.x / 2;
-
         // Iniciar la animación de volteo repetidamente
         InvokeRepeating(nameof(AnimarVolteo), 1f, 2f); // Cada 2 segundos
+
     }
 
 
     void Update()
     {
+        // Restringir la posición en el eje Z
+        transform.position = new Vector3(transform.position.x, transform.position.y, -367.85f);
+
         // Mover enemigo en el eje X
         transform.Translate(Vector2.right * direccion * velocidad * Time.deltaTime);
 
@@ -31,11 +34,11 @@ public class MovimientoEnemigos : MonoBehaviour
         Vector3 posEnPantalla = Camera.main.WorldToViewportPoint(transform.position);
         if (posEnPantalla.x < 0 || posEnPantalla.x > 1)
         {
-            // Notificar al controlador
             ControladorEnemigos.instance.CambiarDireccionGlobal();
         }
-
     }
+    // Método para incrementar la velocidad localmente
+
 
     public void CambiarDireccion(int nuevaDireccion)
     {

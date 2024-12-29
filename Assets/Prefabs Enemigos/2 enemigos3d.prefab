@@ -100,6 +100,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 039b2a3b92a1e8444ab2cd35349fd30c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 4416609621482597408}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 039b2a3b92a1e8444ab2cd35349fd30c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5429657533691100471}
   m_SourcePrefab: {fileID: 100100000, guid: 039b2a3b92a1e8444ab2cd35349fd30c, type: 3}
 --- !u!4 &8158604621448511020 stripped
 Transform:
@@ -208,3 +211,16 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &5429657533691100471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8823395003204904086}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db2955fa6092de04fb2097f5fae66f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigosVida: 3

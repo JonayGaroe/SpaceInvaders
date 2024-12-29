@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 6003642218551750173}
   - component: {fileID: -6445385373825186847}
   - component: {fileID: 4945908017863829914}
+  - component: {fileID: 8087349563676695050}
   m_Layer: 3
   m_Name: enemigo13d
   m_TagString: Enemigos
@@ -134,6 +135,19 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
+--- !u!114 &8087349563676695050
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1470321591751303696}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db2955fa6092de04fb2097f5fae66f5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemigosVida: 3
 --- !u!1 &2299082103840965052
 GameObject:
   m_ObjectHideFlags: 0
