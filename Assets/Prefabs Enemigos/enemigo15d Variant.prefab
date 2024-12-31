@@ -8,6 +8,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -6445385373825186847, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabPowerUp
+      value: 
+      objectReference: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
+    - target: {fileID: -6445385373825186847, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: probabilidadPowerUp
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 1470321591751303696, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
       propertyPath: m_Name
       value: enemigo15d Variant

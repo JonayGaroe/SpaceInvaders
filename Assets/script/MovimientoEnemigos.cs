@@ -9,8 +9,9 @@ public class MovimientoEnemigos : MonoBehaviour
     private int direccion = 1; // 1: derecha, -1: izquierda
     private float anchoEnemigo;
     private bool volteando = false; // Controla si está en proceso de animación
-    //ControladorEnemigos.instance.DecrementarEnemigosRestantes();
-
+                                    //ControladorEnemigos.instance.DecrementarEnemigosRestantes();
+    //public GameObject prefabPowerUp; // Prefab del power-up
+    //public float probabilidadPowerUp = 0.8f; // Probabilidad de que salga un power-up (20%)
 
 
     void Start()
@@ -36,6 +37,7 @@ public class MovimientoEnemigos : MonoBehaviour
         {
             ControladorEnemigos.instance.CambiarDireccionGlobal();
         }
+       
     }
     // Método para incrementar la velocidad localmente
 
@@ -49,6 +51,20 @@ public class MovimientoEnemigos : MonoBehaviour
     {
         transform.position = new Vector3(transform.position.x, transform.position.y - escalon, transform.position.z);
     }
+
+
+
+/*
+    private void OnDestroy()
+    {
+        if (Random.value < probabilidadPowerUp)
+        {
+            // Instanciamos el power-up en la posición del objeto (enemigo)
+            Instantiate(prefabPowerUp, transform.position, Quaternion.identity);
+        }
+    }
+
+    */
 
     void AnimarVolteo()
     {

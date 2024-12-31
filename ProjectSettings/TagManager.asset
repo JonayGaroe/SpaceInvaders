@@ -8,6 +8,11 @@ TagManager:
   - Bala
   - Naves
   - BalaEnemigos
+  - Muro
+  - PowerUp
+  - PowerUp2
+  - PowerUp3
+  - PowerUp4
   layers:
   - Default
   - TransparentFX

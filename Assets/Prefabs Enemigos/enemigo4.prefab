@@ -153,6 +153,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   velocidad: 20
   escalon: 15
+  prefabPowerUp: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
+  probabilidadPowerUp: 1
 --- !u!114 &-4875311657535294998
 MonoBehaviour:
   m_ObjectHideFlags: 0

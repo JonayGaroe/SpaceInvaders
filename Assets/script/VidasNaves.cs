@@ -31,6 +31,12 @@ public class VidasNaves : MonoBehaviour
 
 
     }
+  
+    public void RestaurarVidas(int cantidadVidas)
+    {
+        vidas += cantidadVidas;
+        Debug.Log("Vidas restauradas: " + vidas);
+    }
 
 
     private void OnCollisionEnter(Collision other)
