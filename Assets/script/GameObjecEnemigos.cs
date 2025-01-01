@@ -7,6 +7,10 @@ using UnityEngine;
 public class GameObjecEnemigos : MonoBehaviour
 {
 
+
+    public AudioClip Bloquefx;
+
+
     // contador
     public TextMeshProUGUI enemigosText;
     public int enemigosCount = 15;
@@ -95,6 +99,8 @@ public class GameObjecEnemigos : MonoBehaviour
             // Destruir el objeto con el tag "bloquesss"
             other.collider.GetComponent<VidasEnemigos>().enemigosVida -= 1;
             Destroy(gameObject);
+            AudioSource.PlayClipAtPoint(Bloquefx, transform.position);
+
             GameController.instance.AgregarPuntos(puntos); // Añadir puntos al controlador de puntuación
             if (other.collider.GetComponent<VidasEnemigos>().enemigosVida <= 0)
             {
