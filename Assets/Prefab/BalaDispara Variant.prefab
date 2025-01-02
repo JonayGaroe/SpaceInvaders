@@ -97,13 +97,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af20fca1397c8344ea99982ba75541f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Bloquefx: {fileID: 8300000, guid: 420b5a7370e788c4ab4c79e8c3ba5b54, type: 3}
   enemigosText: {fileID: 0}
   enemigosCount: 15
   puntos: 10
   puntosdobles: 20
   enemigosText2: {fileID: 0}
   prefabPowerUp: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
-  probabilidadPowerUp: 0
+  probabilidadPowerUp: 1
   prefabPowerUp2: {fileID: 5624639792842043285, guid: 0164651b7b5af1f44bd925479ae11bd6, type: 3}
   probabilidadPowerUp2: 0
   prefabPowerUp3: {fileID: 6708590977936608763, guid: 52dabad334f84da44bcadcb246061670, type: 3}
@@ -113,7 +114,7 @@ MonoBehaviour:
   prefabPowerUp5: {fileID: 4527612071708465094, guid: a7941cf9edeb2b64abd119193109f3e3, type: 3}
   probabilidadPowerUp5: 0
   prefabPowerUp6: {fileID: 1705005248428020390, guid: db6f4252542521c4a8865fff16b97c58, type: 3}
-  probabilidadPowerUp6: 1
+  probabilidadPowerUp6: 0.3
 --- !u!65 &-9105146720638575475
 BoxCollider:
   m_ObjectHideFlags: 0
