@@ -64,6 +64,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8944403848331333215, guid: 1bcbb6099d9c77a4fb0a1e909d86ebab, type: 3}
       insertIndex: -1
       addedObject: {fileID: 2055371722842604895}
+    - targetCorrespondingSourceObject: {fileID: 8944403848331333215, guid: 1bcbb6099d9c77a4fb0a1e909d86ebab, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: -2015984200322597442}
   m_SourcePrefab: {fileID: 100100000, guid: 1bcbb6099d9c77a4fb0a1e909d86ebab, type: 3}
 --- !u!1 &4527612071708465094 stripped
 GameObject:
@@ -83,3 +86,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   vidasRestauradas: 1
+--- !u!114 &-2015984200322597442
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527612071708465094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3de05d3f6a1392e46ab839b10e0f0e98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

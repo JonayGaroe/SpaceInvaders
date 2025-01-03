@@ -23,22 +23,27 @@ public class GameController : MonoBehaviour
         if (instance == null)
         {
             instance = this;
+          
+         // DontDestroyOnLoad(gameObject);  // Si quieres que el objeto no se destruya al cambiar de escena
+               
         }
         else
         {
             Destroy(gameObject);
-        }
 
+        }
+        //ResetearPuntos();
         // Cargar el puntaje guardado al iniciar el juego
         CargarPuntos();
+
     }
 
     void Start()
     {
-        puntosTotales = 0;
+        //puntosTotales = 0;
 
         // Asegúrate de que los textos de puntuación se actualicen al inicio
-        // ActualizarPuntos();
+         ActualizarPuntos();
         ActualizarMayorPuntuacion();
     }
 
@@ -82,6 +87,7 @@ public class GameController : MonoBehaviour
     // Actualiza el texto que muestra los puntos actuales
     private void ActualizarPuntos()
     {
+      //  Debug.Log("llamado a actuguardarpuntos");
         textoPuntos.text = "Puntos: " + puntosTotales;
     }
 
@@ -94,8 +100,10 @@ public class GameController : MonoBehaviour
     // Guardar los puntos en PlayerPrefs
     private void GuardarPuntos()
     {
+      //  Debug.Log("llamado a guardarpuntos");
         PlayerPrefs.SetInt(PuntosGuardado, puntosTotales); // Guardar el puntaje con la clave
         PlayerPrefs.Save(); // Guardar de manera permanente
+  
     }
 
     // Guardar la mayor puntuación en PlayerPrefs
@@ -130,13 +138,30 @@ public class GameController : MonoBehaviour
     // Opcional: Resetear los puntos y la mayor puntuación (por ejemplo, al comenzar una nueva partida)
     public void ResetearPuntos()
     {
+         Debug.Log("llamado a rsetear");
         puntosTotales = 0;
+           //mayorPuntuacion = 0;
+          // GuardarPuntos(); // Guardar el puntaje reseteado
+            GuardarMayorPuntuacion(); // Guardar la mayor puntuación reseteada
+           // ActualizarPuntos();
+            ActualizarMayorPuntuacion();
+        
+    }
+
+
+    public void NextLevel()
+    {
+       // Debug.Log("llamado a nextlevel");
+        // puntosTotales = 0;
         //mayorPuntuacion = 0;
-        //GuardarPuntos(); // Guardar el puntaje reseteado
+        GuardarPuntos(); // Guardar el puntaje reseteado
         GuardarMayorPuntuacion(); // Guardar la mayor puntuación reseteada
-       // ActualizarPuntos();
+        ActualizarPuntos();
         ActualizarMayorPuntuacion();
     }
+
+
+
 
     /*
     public void NuevaPartida()

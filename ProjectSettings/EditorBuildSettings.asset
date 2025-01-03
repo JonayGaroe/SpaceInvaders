@@ -4,5 +4,17 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/EleccionDeNaves.unity
+    guid: 17e27b0f24b949e44bef65eb473dfdd9
+  - enabled: 1
+    path: Assets/Nave1.unity
+    guid: c5ff1c6a67a9b88408126cab2c61ef02
+  - enabled: 1
+    path: Assets/Nave2.unity
+    guid: ef3eacbc93bb04d4ebe4f48d0f1e5d0e
+  - enabled: 1
+    path: Assets/Nave3.unity
+    guid: d4246fa9bdaaed047b49341a5d9ec087
   m_configObjects: {}

@@ -80,7 +80,7 @@ public class DisparoBala : MonoBehaviour
     {
         powerUpActivo = false;
         tiempoEntreDisparosActual = tiempoEntreDisparosNormal; // Restaurar el tiempo entre disparos original
-        Debug.Log("PowerUp terminado. Tiempo entre disparos restaurado a " + tiempoEntreDisparosActual);
+       // Debug.Log("PowerUp terminado. Tiempo entre disparos restaurado a " + tiempoEntreDisparosActual); para restaurar tiempo
     }
 
     void OnBecameInvisible()

@@ -41,7 +41,10 @@ public class MovimientoEnemigos : MonoBehaviour
     }
     // Método para incrementar la velocidad localmente
 
-
+    public void IncrementarVelocidadLocal(float factor)
+    {
+        velocidad *= factor; // Multiplica la velocidad actual por el factor
+    }
     public void CambiarDireccion(int nuevaDireccion)
     {
         direccion = nuevaDireccion;
@@ -54,17 +57,19 @@ public class MovimientoEnemigos : MonoBehaviour
 
 
 
-/*
-    private void OnDestroy()
-    {
-        if (Random.value < probabilidadPowerUp)
+    /*
+        private void OnDestroy()
         {
-            // Instanciamos el power-up en la posición del objeto (enemigo)
-            Instantiate(prefabPowerUp, transform.position, Quaternion.identity);
+            if (Random.value < probabilidadPowerUp)
+            {
+                // Instanciamos el power-up en la posición del objeto (enemigo)
+                Instantiate(prefabPowerUp, transform.position, Quaternion.identity);
+            }
         }
-    }
 
-    */
+        */
+ 
+
 
     void AnimarVolteo()
     {

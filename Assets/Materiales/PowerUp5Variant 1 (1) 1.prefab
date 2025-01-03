@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &894808816769422221
+--- !u!1001 &2988145784582068421
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -10,7 +10,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3760780792112168461, guid: 345a73feda527514585dfd57dffb8755, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1561
+      value: -1063
       objectReference: {fileID: 0}
     - target: {fileID: 3760780792112168461, guid: 345a73feda527514585dfd57dffb8755, type: 3}
       propertyPath: m_LocalPosition.y
@@ -51,14 +51,14 @@ PrefabInstance:
     - target: {fileID: 4698387203065077049, guid: 345a73feda527514585dfd57dffb8755, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
-      objectReference: {fileID: 2100000, guid: 5d28968dad9d37f4e91191e92ec03f78, type: 2}
+      objectReference: {fileID: 2100000, guid: 44a63e96a645a564ab821ac9414931bc, type: 2}
     - target: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
       propertyPath: m_Name
-      value: PowerUp2 Variant
+      value: PowerUp5Variant 1 (1) 1
       objectReference: {fileID: 0}
     - target: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
       propertyPath: m_TagString
-      value: PowerUp2
+      value: Untagged
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: -707238652583638764, guid: 345a73feda527514585dfd57dffb8755, type: 3}
@@ -67,47 +67,38 @@ PrefabInstance:
     m_AddedComponents:
     - targetCorrespondingSourceObject: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
       insertIndex: -1
-      addedObject: {fileID: -4686379470682721992}
+      addedObject: {fileID: 1328776942175469921}
+    - targetCorrespondingSourceObject: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2428492928881004183}
   m_SourcePrefab: {fileID: 100100000, guid: 345a73feda527514585dfd57dffb8755, type: 3}
---- !u!1 &5624639792842043285 stripped
+--- !u!1 &7718119958891586781 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
-  m_PrefabInstance: {fileID: 894808816769422221}
+  m_PrefabInstance: {fileID: 2988145784582068421}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &-4686379470682721992
+--- !u!114 &1328776942175469921
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 5624639792842043285}
+  m_GameObject: {fileID: 7718119958891586781}
   m_Enabled: 0
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14f3c92f295eda045a7dd949a9220b55, type: 3}
+  m_Script: {fileID: 11500000, guid: 3de05d3f6a1392e46ab839b10e0f0e98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Muro1: {fileID: 0}
-  Muro2: {fileID: 0}
-  Muro3: {fileID: 0}
-  Muro4: {fileID: 0}
-  Muro5: {fileID: 0}
-  Muro6: {fileID: 0}
-  Muro7: {fileID: 0}
-  Muro8: {fileID: 0}
-  Muro9: {fileID: 0}
-  Muro10: {fileID: 0}
-  Muro11: {fileID: 0}
-  Muro12: {fileID: 0}
-  Muro13: {fileID: 0}
-  Muro14: {fileID: 0}
-  Muro15: {fileID: 0}
-  Muro16: {fileID: 0}
-  Muro17: {fileID: 0}
-  Muro18: {fileID: 0}
-  Muro19: {fileID: 0}
-  Muro20: {fileID: 0}
-  Muro21: {fileID: 0}
-  Muro22: {fileID: 0}
-  Muro23: {fileID: 0}
-  Muro24: {fileID: 0}
-  Muro25: {fileID: 0}
+--- !u!114 &2428492928881004183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7718119958891586781}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b67efb37b1b618243b9e32d3ca0a9347, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  vidasRestauradas: 1

@@ -107,6 +107,13 @@ public class MovimientoJugador : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+
+
+
+
+
+
+
         if (other.CompareTag("PowerUp2")) // Detectar si el jugador toma el power-up
         {
 

@@ -7,10 +7,13 @@ using UnityEngine;
 public class VidasNaves : MonoBehaviour
 {
 
-
+    [SerializeField]
+    GameObject canvasPerder;
+    [SerializeField]
+    GameObject canvasPerderMenu;
     public int vidas = 3;
     public TextMeshProUGUI vidasText;
-
+    
 
     // Start is called before the first frame update
     void Start()
@@ -54,7 +57,8 @@ public class VidasNaves : MonoBehaviour
             {
        
                 Time.timeScale = 0;
-
+                canvasPerder.SetActive(true);
+                LeanTween.alphaCanvas(canvasPerder.GetComponent<CanvasGroup>(), 1, 0.5f).setIgnoreTimeScale(true); // 0.5 segundos para animar
 
 
 
@@ -69,4 +73,31 @@ public class VidasNaves : MonoBehaviour
         }
 
     }
+
+
+    public void CanvasPerderReintentar()
+    {
+
+
+
+
+
+
+    }
+
+
+    public void CanvasPerderNaves()
+    {
+
+
+
+
+
+
+    }
+
+
+
+
+
 }

@@ -7,6 +7,10 @@ using UnityEngine;
 public class GameObjecEnemigos : MonoBehaviour
 {
 
+    
+    public Canvas canvasGanar;
+
+
 
     public AudioClip Bloquefx;
 
@@ -47,7 +51,9 @@ public class GameObjecEnemigos : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-       // enemigosCount = 15;
+        //MenuDeOpciones.Instance.CanvasGanador();  // Acceder a la función de MenuDeOpciones
+
+        enemigosCount = 15;
        // enemigosText.text = enemigosCount.ToString(); // Mostrar el contador en la interfaz
 
     }
@@ -66,6 +72,8 @@ public class GameObjecEnemigos : MonoBehaviour
                 puntosDoblesActivos = false;
             }
         }
+
+       
 
 
 
@@ -99,15 +107,24 @@ public class GameObjecEnemigos : MonoBehaviour
             // Destruir el objeto con el tag "bloquesss"
             other.collider.GetComponent<VidasEnemigos>().enemigosVida -= 1;
             Destroy(gameObject);
+         
             AudioSource.PlayClipAtPoint(Bloquefx, transform.position);
 
             GameController.instance.AgregarPuntos(puntos); // Añadir puntos al controlador de puntuación
             if (other.collider.GetComponent<VidasEnemigos>().enemigosVida <= 0)
             {
+                enemigosCount = enemigosCount - 1;
+                Debug.Log("menos 1 enemigo");
+                if (enemigosCount <= 0)
+                {
+            
+                    MenuDeOpciones.Instance.CanvasGanador();
+                    Debug.Log("Todos los enemigos han sido derrotados.");
+                }
+                Debug.Log("muerto");
 
-                Destroy(other.gameObject);
+                Destroy(other.gameObject);                //enemigosCount--;
                 GameController.instance.AgregarPuntos(puntosdobles); // Añadir puntos al controlador de puntuación
-
                 // enemigosText2.text = enemigosCount.ToString();
 
                 if (Random.value < probabilidadPowerUp3)
@@ -148,12 +165,14 @@ public class GameObjecEnemigos : MonoBehaviour
             }
 
         }
-
-
         //Asegurarnos de que la colisión es con un objeto con el tag correcto
-        //if (other.CompareTag("bloquesss"))
-
+        //if (other.CompareTag("bloquesss")
         // Verificar si el tag coincide antes de hacer el resto de la lógica
         // Destruir el objeto con el tag "bloquesss"
+
+        
+
+
+
     }
 }
