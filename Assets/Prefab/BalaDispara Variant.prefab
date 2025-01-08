@@ -109,17 +109,17 @@ MonoBehaviour:
   puntosdobles: 20
   enemigosText2: {fileID: 0}
   prefabPowerUp: {fileID: 4784023434601282584, guid: 345a73feda527514585dfd57dffb8755, type: 3}
-  probabilidadPowerUp: 0
+  probabilidadPowerUp: 0.3
   prefabPowerUp2: {fileID: 8653969240815951209, guid: 8367dc50df042c84993e8f80899c5846, type: 3}
-  probabilidadPowerUp2: 1
+  probabilidadPowerUp2: 0.3
   prefabPowerUp3: {fileID: 8908419899988225673, guid: e72ca68f8420aa947ae4c4f61e3ec125, type: 3}
-  probabilidadPowerUp3: 0
+  probabilidadPowerUp3: 0.3
   prefabPowerUp4: {fileID: 6345848672659322420, guid: 8d5b3aaa554a26547b3256e7697b098e, type: 3}
-  probabilidadPowerUp4: 0
+  probabilidadPowerUp4: 0.3
   prefabPowerUp5: {fileID: 7718119958891586781, guid: 9bc13d94b3c41424dab8f90bfe3f3f53, type: 3}
-  probabilidadPowerUp5: 0
+  probabilidadPowerUp5: 0.3
   prefabPowerUp6: {fileID: 2138412813829012117, guid: 42f73a6a0a7871247b52e510e12555c8, type: 3}
-  probabilidadPowerUp6: 0
+  probabilidadPowerUp6: 0.3
 --- !u!65 &-9105146720638575475
 BoxCollider:
   m_ObjectHideFlags: 0

@@ -20,6 +20,7 @@ public class BalaExtra : MonoBehaviour
             if (canvasEnemigo1 != null)
             {
                 canvasEnemigo1.SetActive(true);
+                Destroy(gameObject);
             }
             else
             {
@@ -31,6 +32,7 @@ public class BalaExtra : MonoBehaviour
             if (canvasEnemigo2 != null)
             {
                 canvasEnemigo2.SetActive(true);
+                Destroy(gameObject);
             }
             else
             {
@@ -42,6 +44,7 @@ public class BalaExtra : MonoBehaviour
             if (canvasEnemigo3 != null)
             {
                 canvasEnemigo3.SetActive(true);
+                Destroy(gameObject);
             }
             else
             {
