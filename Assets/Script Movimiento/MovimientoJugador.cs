@@ -5,6 +5,13 @@ using UnityEngine.UIElements;
 
 public class MovimientoJugador : MonoBehaviour
 {
+    //float horizontalInput = Input.GetAxis("Horizontal");
+    //Get the value of the Horizontal input axis.
+
+    // float verticalInput = Input.GetAxis("Vertical");
+    //Get the value of the Vertical input axis.
+    //float horizontalInput = Input.GetAxis("Horizontal");
+
     [SerializeField]
     private float speed = 40f;
     [SerializeField]
@@ -35,8 +42,8 @@ public class MovimientoJugador : MonoBehaviour
 
     void Update()
     {
-        // Obtener el movimiento horizontal
         float movement = Input.GetAxisRaw("Horizontal");
+        float horizontalInput = Input.GetAxis("Horizontal");
 
         // Invertir controles si están activados
         if (controlesInvertidos)
@@ -44,10 +51,9 @@ public class MovimientoJugador : MonoBehaviour
             movement *= -1;
         }
         // Mover la nave
-        float nuevaPosX = transform.position.x + movement * currentSpeed * Time.deltaTime;
-
+        float nuevaPosX = transform.position.x +  movement * currentSpeed  * Time.deltaTime;
         // Mover la nave
-       // transform.Translate(Vector3.right * movement * currentSpeed * Time.deltaTime);
+        // transform.Translate(Vector3.right * movement * currentSpeed * Time.deltaTime);
         // Limitar la nueva posición en X dentro de los límites especificados
         nuevaPosX = Mathf.Clamp(nuevaPosX, minX, maxX);
 

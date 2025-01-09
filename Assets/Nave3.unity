@@ -709,6 +709,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBala: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
   puntoDisparo: {fileID: 199241728}
+  objetocreado: {fileID: 0}
+  prefabbalaEspecial: {fileID: 0}
+  prefabbalaEspecial2: {fileID: 0}
   velocidadBala: 90
   tiempoDeVida: 2
   tiempoEntreDisparosNormal: 0.4
@@ -936,6 +939,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBala: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
   puntoDisparo: {fileID: 1369646804}
+  objetocreado: {fileID: 0}
+  prefabbalaEspecial: {fileID: 3027323418014288470, guid: f43e19f39b0278945ad3e847658b1ead, type: 3}
+  prefabbalaEspecial2: {fileID: 1701184754427535567, guid: 6456787a200f2d0409fc3721d1a5fa44, type: 3}
   velocidadBala: 90
   tiempoDeVida: 2
   tiempoEntreDisparosNormal: 0.2
@@ -958,6 +964,7 @@ MonoBehaviour:
   enemigosCount: 15
   puntos: 10
   puntosdobles: 20
+  balaInstancia: {fileID: 0}
   enemigosText2: {fileID: 0}
   prefabPowerUp: {fileID: 0}
   probabilidadPowerUp: 0.8
@@ -2629,6 +2636,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBala: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
   puntoDisparo: {fileID: 1128111196}
+  objetocreado: {fileID: 0}
+  prefabbalaEspecial: {fileID: 0}
+  prefabbalaEspecial2: {fileID: 0}
   velocidadBala: 60
   tiempoDeVida: 2
   tiempoEntreDisparosNormal: 0.3
@@ -2713,6 +2723,7 @@ MonoBehaviour:
   enemigosCount: 15
   puntos: 10
   puntosdobles: 20
+  balaInstancia: {fileID: 0}
   enemigosText2: {fileID: 0}
   prefabPowerUp: {fileID: 0}
   probabilidadPowerUp: 0.8
@@ -7359,6 +7370,7 @@ MonoBehaviour:
   enemigosCount: 15
   puntos: 10
   puntosdobles: 20
+  balaInstancia: {fileID: 0}
   enemigosText2: {fileID: 0}
   prefabPowerUp: {fileID: 0}
   probabilidadPowerUp: 0.8
@@ -8603,6 +8615,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefabBala: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
   puntoDisparo: {fileID: 462336674}
+  objetocreado: {fileID: 0}
+  prefabbalaEspecial: {fileID: 0}
+  prefabbalaEspecial2: {fileID: 0}
   velocidadBala: 60
   tiempoDeVida: 2
   tiempoEntreDisparosNormal: 0.5
@@ -8703,6 +8718,7 @@ MonoBehaviour:
   enemigosCount: 15
   puntos: 10
   puntosdobles: 20
+  balaInstancia: {fileID: 0}
   enemigosText2: {fileID: 0}
   prefabPowerUp: {fileID: 0}
   probabilidadPowerUp: 0.8

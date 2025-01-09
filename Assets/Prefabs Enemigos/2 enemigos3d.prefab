@@ -103,6 +103,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 039b2a3b92a1e8444ab2cd35349fd30c, type: 3}
       insertIndex: -1
       addedObject: {fileID: 5429657533691100471}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 039b2a3b92a1e8444ab2cd35349fd30c, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6016980500614777195}
   m_SourcePrefab: {fileID: 100100000, guid: 039b2a3b92a1e8444ab2cd35349fd30c, type: 3}
 --- !u!4 &8158604621448511020 stripped
 Transform:
@@ -223,4 +226,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: db2955fa6092de04fb2097f5fae66f5f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemigosVida: 9
+  enemigosVida: 1
+--- !u!114 &6016980500614777195
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8823395003204904086}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d59aa27b717de934d91727b4860a1d5c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabBala: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
+  puntoDisparo: {fileID: 0}
+  objetocreado: {fileID: 0}
+  prefabbalaEspecial: {fileID: 3027323418014288470, guid: f43e19f39b0278945ad3e847658b1ead, type: 3}
+  prefabbalaEspecial2: {fileID: 1701184754427535567, guid: 6456787a200f2d0409fc3721d1a5fa44, type: 3}
+  velocidadBala: 60
+  tiempoDeVida: 2
+  tiempoEntreDisparosNormal: 1
+  retardoDisparo: 0

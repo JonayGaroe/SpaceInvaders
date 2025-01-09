@@ -16,6 +16,34 @@ PrefabInstance:
       propertyPath: probabilidadPowerUp
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: -1040538124150726229, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabBala
+      value: 
+      objectReference: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
+    - target: {fileID: -1040538124150726229, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabbalaEspecial
+      value: 
+      objectReference: {fileID: 3027323418014288470, guid: f43e19f39b0278945ad3e847658b1ead, type: 3}
+    - target: {fileID: -1040538124150726229, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabbalaEspecial2
+      value: 
+      objectReference: {fileID: 3829675341886108016, guid: 95fd1d223e2f71148ae209fd3f684f96, type: 3}
+    - target: {fileID: -87775754740542161, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -87775754740542161, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabBala
+      value: 
+      objectReference: {fileID: 9070835346366119537, guid: 33aed8aba86f99e40ad90b415c3ae95e, type: 3}
+    - target: {fileID: -87775754740542161, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabbalaEspecial
+      value: 
+      objectReference: {fileID: 3027323418014288470, guid: f43e19f39b0278945ad3e847658b1ead, type: 3}
+    - target: {fileID: -87775754740542161, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: prefabbalaEspecial2
+      value: 
+      objectReference: {fileID: 1701184754427535567, guid: 6456787a200f2d0409fc3721d1a5fa44, type: 3}
     - target: {fileID: 1470321591751303696, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
       propertyPath: m_Name
       value: enemigo15d Variant
@@ -60,15 +88,20 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4955077399496182184, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 7754110388513869873, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
       objectReference: {fileID: 2100000, guid: 8e855a6ae3398ac408c0329f1dff919f, type: 2}
     - target: {fileID: 8087349563676695050, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
       propertyPath: enemigosVida
-      value: 9
+      value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: -1040538124150726229, guid: 726d96741cbcbfa4e8f5c0aa5998d48f, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []

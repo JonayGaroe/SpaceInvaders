@@ -23,11 +23,11 @@ public class GameObjecEnemigos : MonoBehaviour
     // puntos enemigos 
     public int puntos = 10; // Puntos que otorga este enemigo cuando es destruido
     public int puntosdobles = 20; // Puntos que otorga este enemigo cuando es destruido
-
+    public GameObject balaInstancia; 
 
     private bool puntosDoblesActivos = false; // Si los puntos dobles están activos
     private float tiempoRestante = 0f; // Tiempo restante de los puntos dobles
-
+   // public GameObject BalaEspecial;
 
     public TextMeshProUGUI enemigosText2;
     public GameObject prefabPowerUp; // Prefab del power-up
@@ -107,7 +107,7 @@ public class GameObjecEnemigos : MonoBehaviour
             // Destruir el objeto con el tag "bloquesss"
             other.collider.GetComponent<VidasEnemigos>().enemigosVida -= 1;
             Destroy(gameObject);
-         
+            
             AudioSource.PlayClipAtPoint(Bloquefx, transform.position);
 
             GameController.instance.AgregarPuntos(puntos); // Añadir puntos al controlador de puntuación
@@ -121,8 +121,10 @@ public class GameObjecEnemigos : MonoBehaviour
                     MenuDeOpciones.Instance.CanvasGanador();
                     Debug.Log("Todos los enemigos han sido derrotados.");
                 }
-                Debug.Log("muerto");
 
+
+
+                Debug.Log("muerto");
                 Destroy(other.gameObject);                //enemigosCount--;
                 GameController.instance.AgregarPuntos(puntosdobles); // Añadir puntos al controlador de puntuación
                 // enemigosText2.text = enemigosCount.ToString();
@@ -163,8 +165,11 @@ public class GameObjecEnemigos : MonoBehaviour
                 }
 
             }
-
         }
+
+        
+
+        
         //Asegurarnos de que la colisión es con un objeto con el tag correcto
         //if (other.CompareTag("bloquesss")
         // Verificar si el tag coincide antes de hacer el resto de la lógica
@@ -174,5 +179,6 @@ public class GameObjecEnemigos : MonoBehaviour
 
 
 
+        
     }
 }

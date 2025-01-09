@@ -11,14 +11,19 @@ public class MoverExtraNaves : MonoBehaviour
 {
 
 
-  
-   
-   
+
+
+
+    //float horizontalInput = Input.GetAxis("Horizontal");
+    //Get the value of the Horizontal input axis.
+
+   // float verticalInput = Input.GetAxis("Vertical");
+    //Get the value of the Vertical input axis.
 
     // Las coordenadas a las que el cubo se moverá
     private float[] posicionesX = new float[] { -1747.5f, -1594.5f, -1431.2f };
     private float[] posicionesX2 = new float[] { -1431.2f, -1594.5f, -1747.5f };
-    private float posicionY = 47.7f;  // Coordenada Y donde el cubo se moverá hacia arriba
+    //private float posicionY = 47.7f;  // Coordenada Y donde el cubo se moverá hacia arriba
 
     private int indicePosicion = 0;  // Mantener el índice de la posición actual
 

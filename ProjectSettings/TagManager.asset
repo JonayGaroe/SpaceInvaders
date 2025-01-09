@@ -20,6 +20,8 @@ TagManager:
   - Enemigo1
   - Enemigo2
   - Enemigo3
+  - BalaEspecial
+  - BalaEspacial
   layers:
   - Default
   - TransparentFX
